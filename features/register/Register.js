@@ -4,39 +4,34 @@ import CustomInput from '../../components/Input/CustomInput';
 import SecureInput from '../../components/Input/SecureInput';
 import Colors from '../../resources/Colors';
 
-const Login = ({navigation}) => {
+const Register = ({navigation}) => {
     return (
         <View style={styles.container}>
             <View>
                 <View style={{alignItems: 'center'}}>
-                    <Text style={styles.textLink}>ลงชื่อเข้าใช้งานระบบ</Text>
+                    <Text style={styles.textLink}>ลงทะเบียนเข้าใช้งานระบบ</Text>
                 </View>
 
+                <CustomInput title="ชื่อที่แสดงในระบบ" placeholder="กรอกชื่อที่แสดงในระบบ" />
                 <CustomInput title="อีเมล" placeholder="กรอกอีเมล" />
                 <SecureInput title="รหัสผ่าน" placeholder="กรอกรหัสผ่าน" />
-
-                <View style={{alignItems: 'flex-end', padding: 8}}>
-                    <Text style={styles.textLink} onPress={(e) => console.log('click forgot password')}>
-                        ลืมรหัสผ่าน
-                    </Text>
-                </View>
             </View>
 
-            <View>
+            <View style={{marginTop: 18}}>
                 <View>
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => navigation.navigate('Home')}
                         underlayColor={Colors.WHITE}>
-                            <Text style={styles.textLink}>เข้าสู่ระบบ</Text>
+                            <Text style={styles.textLink}>ลงทะเบียน</Text>
                     </TouchableOpacity>
                 </View>
 
                 <View style={{alignItems: 'flex-end', padding: 8}}>
                     <Text>
-                        <Text style={styles.text}>สมัครสมาชิกที่นี </Text>
-                        <Text style={styles.textLink} onPress={(e) => navigation.navigate('Register')}>
-                            ลงทะเบียนเข้าใช้งาน
+                        <Text style={styles.text}>เป็นสมาชิกอยู่แล้ว </Text>
+                        <Text style={styles.textLink} onPress={(e) => navigation.goBack()}>
+                            เข้าสู่ระบบ
                         </Text>
                     </Text>
                 </View>
@@ -49,6 +44,7 @@ const Login = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: Colors.ORANGE,
+        minHeight: '50%',
         borderRadius: 20,
         padding: 18,
         justifyContent: 'space-between'
@@ -71,4 +67,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Login;
+export default Register;

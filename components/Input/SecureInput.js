@@ -27,7 +27,7 @@ const SecureInput = (props) => {
                 />
                 <Icon
                     style={styles.searchIcon}
-                    name={isPasswordSecure ? "eye-slash" : "eye"} 
+                    name={isPasswordSecure ? "eye-slash" : "eye"}
                     size={20}
                     color={Colors.BLUE}
                     onPress={() => setIsPasswordSecure(!isPasswordSecure)}

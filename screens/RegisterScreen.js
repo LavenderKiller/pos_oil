@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text, ImageBackground } from 'react-native';
 
-import Login from '../features/login/Login';
+import Register from '../features/register/Register';
 
 import Colors from '../resources/Colors';
 
-const LoginScreen = ({navigation}) => {
+const RegisterScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
             <ImageBackground source={require('../resources/images/Logo.png')} style={styles.image}>
@@ -15,8 +15,8 @@ const LoginScreen = ({navigation}) => {
                     <Text style={styles.textSmall}>คุณจะได้รับความสะดวกในการจัดเก็บข้อมูลที่สามารถนำไปวิเคราะห์การตลาดได้ อย่างง่ายดายที่นี</Text>
                 </View>
             </ImageBackground>
-            <View style={styles.loginContent}>
-                <Login navigation={navigation} />
+            <View style={styles.RegisterContent}>
+                <Register navigation={navigation} />
             </View>
 
             <StatusBar style="auto" />
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: Colors.BLUE,
     },
-    loginContent: {
+    RegisterContent: {
         marginLeft: 18,
         marginRight: 18,
         marginBottom: 18,
@@ -56,7 +56,6 @@ const styles = StyleSheet.create({
         color: Colors.WHITE,
         fontSize: 14,
     },
-
 });
 
-export default LoginScreen;
+export default RegisterScreen;
