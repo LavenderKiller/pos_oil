@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "pos_oil",
+    "slug": "pos_oil",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "pos_oil"
+}
