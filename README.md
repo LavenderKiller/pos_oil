@@ -23,9 +23,6 @@ The mini-app-template consists of three main folders:
 - Node.js
 - Yarn
 
-```bash
-install command
-```
 
 ## Getting Started
 Getting Started
@@ -36,7 +33,12 @@ cd pos_oil
 
 ### Install the project dependencies:
 ```bash
-yarn install
+npm install
+```
+
+```bash
+cd ios
+pod install
 ```
 
 ## For mobile app development
