@@ -12,7 +12,10 @@ const HomeScreen = ({navigation}) => {
                     navigation.navigate('Profile', {name: 'Jane'})
                 }
             />
-            <Text onPress={(e) => navigation.goBack()}>
+            <Text onPress={(e) => {
+                navigation.goBack();
+                navigation.goBack();
+            }}>
                 เข้าสู่ระบบ
             </Text>
             <StatusBar style="auto" />

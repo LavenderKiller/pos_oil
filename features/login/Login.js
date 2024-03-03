@@ -26,7 +26,7 @@ const Login = ({navigation}) => {
                 <View>
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={() => navigation.navigate('Home')}
+                        onPress={() => navigation.navigate('SelectOilStation')}
                         underlayColor={Colors.WHITE}>
                             <Text style={styles.textLink}>เข้าสู่ระบบ</Text>
                     </TouchableOpacity>
