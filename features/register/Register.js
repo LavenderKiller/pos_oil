@@ -21,7 +21,7 @@ const Register = ({navigation}) => {
                 <View>
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={() => navigation.navigate('Home')}
+                        onPress={() => navigation.navigate('CreateOrJoin')}
                         underlayColor={Colors.WHITE}>
                             <Text style={styles.textLink}>ลงทะเบียน</Text>
                     </TouchableOpacity>

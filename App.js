@@ -4,8 +4,11 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 // screen
 import LoginScreen from './screens/LoginScreen';
-import RegisterScreen from './screens/RegisterScreen';
 import SelectOilStationScreen from './screens/SelectOilStationScreen';
+
+import RegisterScreen from './screens/RegisterScreen';
+import CreateOrJoinScreen from './screens/CreateOrJoinScreen';
+
 import HomeScreen from './screens/HomeScreen';
 import ProfileScreen from './screens/ProfileScreen';
 
@@ -22,13 +25,19 @@ export default function App() {
           options={{title: '', headerShown: false}}
         />
         <Stack.Screen
+          name="SelectOilStation"
+          component={SelectOilStationScreen}
+          options={{title: '', headerShown: false}}
+        />
+
+        <Stack.Screen
           name="Register"
           component={RegisterScreen}
           options={{title: '', headerShown: false}}
         />
         <Stack.Screen
-          name="SelectOilStation"
-          component={SelectOilStationScreen}
+          name="CreateOrJoin"
+          component={CreateOrJoinScreen}
           options={{title: '', headerShown: false}}
         />
 

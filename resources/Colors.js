@@ -7,6 +7,8 @@ const Colors =
     GREEN: '#16A54A',
     RED: '#FF0000',
 
+    TRANSPARENT: 'transparent',
+
     PURPLE: '#8E44AD',
     GRAY: '#566573',
 }
